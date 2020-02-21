@@ -1,3 +1,13 @@
+#### About 
+
+A React context, hooks based Google Keep style todo list web app.
+
+#### Technologies Used
+
+- Javascript
+- HTML5
+- CSS3
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
