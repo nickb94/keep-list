@@ -4,9 +4,11 @@ export const Context = createContext();
 
 export const Provider = (props) => {
 
-    const [tasks, setTasks] = React.useState([
-       
-    ])
+
+
+    const initialState = JSON.parse(localStorage.getItem("tasks")) || []
+
+    const [tasks, setTasks] = React.useState(initialState);
 
     const [editItem, setEditItem] = React.useState(null);
 
@@ -18,6 +20,11 @@ export const Provider = (props) => {
         ])
 
     }
+
+    React.useEffect(()=>{
+        localStorage.setItem("tasks", JSON.stringify(tasks));
+    },[tasks]);
+
 
     const removeTask = (id) => {
 
