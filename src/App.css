@@ -179,8 +179,9 @@ body {
   display: flex;
   justify-content: center;
   position: relative;
-  top: -20px;
-  left: 170px;
+  top: -25px;
+  left: 730px;
+  width: fit-content;
 }
 
 .clear-button {
@@ -224,8 +225,27 @@ body {
   border: 1px solid lightgray;
   border-radius: 10px;
   background-color: white;
+  display: flex;
+  justify-content: space-between;
 }
 
-.title{
+.title {
   font-size: 30px;
+  word-break: break-word;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  filter: grayscale(1);
+  
+}
+
+button {
+  background: none;
+  border: none;
+  margin: 5px 5px;
+  outline: none;
+  cursor: pointer;
 }

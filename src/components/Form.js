@@ -61,10 +61,10 @@ const Form = () => {
       <button
        className="add-button"
        type="submit">
-        {editItem ? "✍🏻" : "+"}
+        {editItem ? <span aria-label="none" alt="update" role="img">✍🏻</span> : "+"}
       </button>
 
-      <button className="clear-button" onClick={clearList}><span role="img">🗑️</span></button>
+      <button className="clear-button" onClick={clearList}><span aria-label="noneq" role="img">🗑️</span></button>
       
     </div>
     </form>

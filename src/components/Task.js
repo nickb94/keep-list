@@ -11,9 +11,9 @@ const Task = ({ task }) => {
             <div className="title">
             <span>{task.title}</span>
             </div>
-            <div>
-            <button onClick={() => removeTask(task.id)}>Delete</button>{ ""}
-            <button onClick={() => findItem(task.id)}>Update</button>
+            <div className="actions">
+            <button onClick={() => removeTask(task.id)}><span alt="delete task" aria-label="update" role="img">🚫</span></button>{""}
+            <button onClick={() => findItem(task.id)}><span aria-label="update" alt="update task" role="img">📝</span></button>
             </div>
         </li>
     );
